@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* seletor para tag*/
+body
+{
+    background-color: black;
+    color: white;
+    font-family: Arial;
+}
+
+/*seletor por id*/
+#senha
+{
+    background-color: magenta;
+    color: yellow;
+}
+
+
+/*seletor por classe|apelido*/
+
+.apelido1
+{
+    width:20%;
+    background-color: white;
+    color: black;
+    height: 40px;
+    border: solid 2px lime;
+    border-radius: 10px;
+}
+
+/* mudança de cor no modo retrato*/
+@media screen and (max-width: 500px) and (min-width:0px)
+{
+    body 
+    {
+        margin: 0px;
+        background-color: chocolate;
+    }
+}
