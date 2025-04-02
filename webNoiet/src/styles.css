@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+/*/* You can add global styles to this file, and also import other style files */
 
 /* seletor para tag*/
 body
@@ -8,15 +8,15 @@ body
     font-family: Arial;
 }
 
-/*seletor por id*/
+/*seletor por id
 #senha
 {
     background-color: magenta;
     color: yellow;
 }
+*/
 
-
-/*seletor por classe|apelido*/
+/*seletor por classe|apelido
 
 .apelido1
 {
@@ -27,8 +27,8 @@ body
     border: solid 2px lime;
     border-radius: 10px;
 }
-
-/* mudança de cor no modo retrato*/
+*/
+/* mudança de cor no modo retrato
 @media screen and (max-width: 500px) and (min-width:0px)
 {
     body 
@@ -37,3 +37,15 @@ body
         background-color: chocolate;
     }
 }
+*/
+
+.card, .bg-dark {
+    font-family: 'Roboto', sans-serif !important;
+  }
+
+.testeimagem{
+    background-image: src="./assets/img/produtos/produto1.jpg";
+    width: 100px;
+    height: 100px;
+}
+  
