@@ -1,0 +1,52 @@
+<div class="alert alert-info" *ngIf="mensagem.length>0">
+    {{mensagem}}
+  </div>
+
+
+
+<div class="container my-5 ">
+    <div style="font-family: Roboto !important;">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let obj of produtos">
+
+            <div class="card my-4">
+            <img class="card-img-top" src="assets/img/produtos/produto{{obj.codigo}}.jpg" alt="Produto 1">
+
+
+                <div class="card-body">
+                <h4 class="card-title">{{obj.nome}}</h4>
+                <p class="card-text">{{obj.descritivo}}</p>
+                <div>R$ {{obj.valor}}</div>
+                <button class="btn btn-primary" (click)="detalhes(obj);">+detalhes</button>
+              </div>
+              
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+     
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Detalhe do produto</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+     
+            <!-- Modal body -->
+            <div class="modal-body">
+              Modal body..
+            </div>
+     
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">fechar</button>
+            </div>
+     
+          </div>
+        </div>
+      </div>

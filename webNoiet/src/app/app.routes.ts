@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { CestaDeComprasComponent } from './cesta-de-compras/cesta-de-compras.component';
 import { DetalheDoProdutoComponent } from './detalhe-do-produto/detalhe-do-produto.component';
 import { GravarPedidoComponent } from './gravar-pedido/gravar-pedido.component';
+import { VitrineComponent } from './vitrine/vitrine.component';
 
 export const routes: Routes = [
 
@@ -11,5 +12,6 @@ export const routes: Routes = [
     {path:"gravarpedido", component:GravarPedidoComponent},
     {path:"cadastro", component:CadastroComponent},
     {path:"login", component:LoginComponent},
-    {path:"", component:DetalheDoProdutoComponent}
+    {path:"detalheproduto", component:DetalheDoProdutoComponent},
+    {path:"", component:VitrineComponent}
 ];
